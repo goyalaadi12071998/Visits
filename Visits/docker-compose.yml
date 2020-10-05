@@ -1,9 +1,0 @@
-version: '3'
-services:                       ############ type of container
-  redis-server:
-    image: 'redis'             ######### image name to craete a container
-  node-app:
-    restart: on-failure
-    build: .                    #####see in the current directory for a docker file
-    ports: 
-      - "8081:8081"             ####### 8081 in local machine to 8081 in the docker contaier    
